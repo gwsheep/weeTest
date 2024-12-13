@@ -10,7 +10,7 @@ import java.util.function.Consumer;
 @RequiredArgsConstructor
 public class TestSinkController {
 
-    private final Consumer<Message<>> testConsumer;
+//    private final Consumer<Message<>> testConsumer;
 
 
 
