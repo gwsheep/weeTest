@@ -13,7 +13,6 @@ import java.util.function.Function;
 @SpringBootTest
 public class TestProcessorConfigTest {
 
-    private static final Logger log = LoggerFactory.getLogger(TestProcessorConfigTest.class);
     @Autowired
     private Function<String, String> parseMessage;
 
