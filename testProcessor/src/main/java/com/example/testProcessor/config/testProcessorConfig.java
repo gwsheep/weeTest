@@ -14,8 +14,12 @@ public class testProcessorConfig {
     public Function<String, String> parseMessage() {
 
         log.info("====== test processor =====");
-        return input -> input + " is parsed";
-
+        return input -> {
+            log.info("before message = {} ", input);
+            String tmpMessage = input + " is parsed";
+            log.info("parsed message = {} ", input);
+            return tmpMessage;
+        };
     }
 
 }
