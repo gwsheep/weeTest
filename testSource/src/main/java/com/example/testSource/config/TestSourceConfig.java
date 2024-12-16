@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 
 @Slf4j
 @RestController
-@Component
+@Configuration
 public class TestSourceConfig {
 
     private String messages;

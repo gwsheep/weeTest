@@ -8,16 +8,15 @@ import java.util.function.Function;
 
 @Slf4j
 @Configuration
-public class testProcessorConfig {
+public class TestProcessorConfig {
 
     @Bean
     public Function<String, String> parseMessage() {
-
-        log.info("====== test processor =====");
         return input -> {
+            log.info("====== test processor =====");
             log.info("before message = {} ", input);
             String tmpMessage = input + " is parsed";
-            log.info("parsed message = {} ", input);
+            log.info("parsed message = {} ", tmpMessage);
             return tmpMessage;
         };
     }
